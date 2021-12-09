@@ -29,7 +29,7 @@ class SignUpViewController: UIViewController {
     @IBAction func xBtnAction(_ sender: UIBarButtonItem) {
         printContent(sender)
         
-//        self.dismiss(animated: true, completion: nil)
+        //        self.dismiss(animated: true, completion: nil)
         
     }
     override func viewDidLoad() {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qyP-wC-nK9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -38,7 +38,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVJ-Kp-av4">
-                                <rect key="frame" x="110" y="364.5" width="194" height="41"/>
+                                <rect key="frame" x="110" y="383.5" width="194" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" id="Lmu-wq-d9I"/>
                                     <constraint firstAttribute="height" constant="41" id="xES-mm-ogH"/>
@@ -129,24 +129,26 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ef0-Be-rLm" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.85" id="BYC-yh-6X0"/>
+                            <constraint firstItem="ef0-Be-rLm" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.76" id="BYC-yh-6X0"/>
                             <constraint firstItem="M3r-lq-lXg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KKP-Mr-3qf"/>
                             <constraint firstItem="M3r-lq-lXg" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.66" constant="4.0199999999999818" id="Lia-Uc-1EW"/>
                             <constraint firstItem="ef0-Be-rLm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="RbU-cM-y03"/>
-                            <constraint firstItem="ODv-Ko-CXs" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.7" id="Wsd-V9-Te9"/>
+                            <constraint firstItem="ODv-Ko-CXs" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.65" id="Wsd-V9-Te9"/>
                             <constraint firstItem="tVJ-Kp-av4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sRJ-GE-san"/>
                             <constraint firstItem="ODv-Ko-CXs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="teZ-YV-Ke6"/>
                             <constraint firstItem="tVJ-Kp-av4" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.85" id="vIj-5U-x81"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="XJs-eN-Jug"/>
+                    <navigationItem key="navigationItem" id="XJs-eN-Jug">
+                        <barButtonItem key="backBarButtonItem" title=" " id="egg-Hl-zXH"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="signUpBtnOL" destination="ODv-Ko-CXs" id="tJy-At-OTC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+            <point key="canvasLocation" x="939.13043478260875" y="83.705357142857139"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="uPU-En-lHG">
@@ -157,7 +159,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G59-pK-Q58" userLabel="Login Info View">
-                                <rect key="frame" x="0.0" y="137" width="414" height="179"/>
+                                <rect key="frame" x="0.0" y="148" width="414" height="179"/>
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="6cf-3f-aVr">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
@@ -246,26 +248,11 @@
                                     <color key="textColor" red="0.41176470588235292" green="0.42745098039215684" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Sign In" id="aVu-4b-LYC">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="wGp-eZ-FR7">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="jCj-FF-fIJ">
-                                                <rect key="frame" x="20" y="5" width="45" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="tintColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                            <connections>
-                                                <action selector="xBtnAction:" destination="hr8-5A-4kE" id="Ncs-T5-Fht"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="Sign In" id="aVu-4b-LYC"/>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hct-qh-EVO" userLabel="SIGN IN">
-                                <rect key="frame" x="57" y="745" width="300" height="50"/>
+                                <rect key="frame" x="57" y="782.5" width="300" height="50"/>
                                 <color key="backgroundColor" red="0.68235294120000001" green="0.75294117650000003" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2w7-I8-llO"/>
@@ -307,7 +294,9 @@
                             <constraint firstItem="fyd-Me-Rwh" firstAttribute="centerX" secondItem="P6t-lf-ak1" secondAttribute="centerX" id="hwU-Oo-M70"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="8WP-HF-7wQ"/>
+                    <navigationItem key="navigationItem" id="8WP-HF-7wQ">
+                        <barButtonItem key="backBarButtonItem" title=" " id="65g-gg-QuB"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailOL" destination="61y-pP-eHo" id="YLV-0f-2bA"/>
                         <outlet property="emailViewOL" destination="nrA-iD-HII" id="Ekq-ig-Ixt"/>
@@ -317,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3V-q1-e4w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1011.5942028985507" y="-217.63392857142856"/>
+            <point key="canvasLocation" x="1921.7391304347827" y="-217.63392857142856"/>
         </scene>
         <!--ForgotPW View Controller-->
         <scene sceneID="htE-Ub-LW6">
@@ -328,7 +317,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4XH-Ud-oXL" userLabel="Login Info View">
-                                <rect key="frame" x="0.0" y="136.5" width="414" height="89.5"/>
+                                <rect key="frame" x="0.0" y="145" width="414" height="90"/>
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="psY-hN-0Xk">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
@@ -338,10 +327,10 @@
                                         </constraints>
                                     </progressView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="88G-MS-meE" userLabel="Email View">
-                                        <rect key="frame" x="27.5" y="9" width="359" height="80.5"/>
+                                        <rect key="frame" x="27.5" y="9" width="359" height="81"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Email" minimumFontSize="15" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="hiA-lk-9Wf">
-                                                <rect key="frame" x="31.5" y="19.5" width="296" height="41.5"/>
+                                                <rect key="frame" x="31.5" y="19.5" width="296" height="42"/>
                                                 <attributedString key="attributedText"/>
                                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                                             </textField>
@@ -355,7 +344,7 @@
                                         </constraints>
                                     </view>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="cgj-4w-lrZ">
-                                        <rect key="frame" x="0.0" y="88.5" width="414" height="1"/>
+                                        <rect key="frame" x="0.0" y="89" width="414" height="1"/>
                                         <color key="tintColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="Acn-Ow-Tfh"/>
@@ -386,26 +375,11 @@
                                     <color key="textColor" red="0.41176470590000003" green="0.42745098040000001" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Reset Password" id="cVe-T7-s8R">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="9gj-So-kPr">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="am6-kb-fnn">
-                                                <rect key="frame" x="20" y="5" width="45" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="tintColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                            <connections>
-                                                <action selector="xBtnAction:" destination="oLE-Li-qYp" id="rBY-KD-CWA"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="Reset Password" id="cVe-T7-s8R"/>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWa-gG-5Gh">
-                                <rect key="frame" x="57" y="745" width="300" height="50"/>
+                                <rect key="frame" x="57" y="782.5" width="300" height="50"/>
                                 <color key="backgroundColor" red="0.68235294120000001" green="0.75294117650000003" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="KVs-6Y-fVX"/>
@@ -419,7 +393,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMw-e1-gfL">
-                                <rect key="frame" x="83" y="276.5" width="248" height="36"/>
+                                <rect key="frame" x="83" y="291" width="248" height="36"/>
                                 <color key="tintColor" red="0.53725490200000003" green="0.52941176469999995" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -448,7 +422,9 @@ to reset your password.</string>
                             <constraint firstItem="4XH-Ud-oXL" firstAttribute="centerY" secondItem="Xuc-t9-dtr" secondAttribute="centerY" multiplier="0.4" id="wiS-fH-eJe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="i3b-pv-J7B"/>
+                    <navigationItem key="navigationItem" id="i3b-pv-J7B">
+                        <barButtonItem key="backBarButtonItem" title=" " id="X3z-ff-OFV"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailOL" destination="hiA-lk-9Wf" id="RJO-lc-22O"/>
                         <outlet property="resetBtnOL" destination="MWa-gG-5Gh" id="KCI-qo-FAh"/>
@@ -456,7 +432,7 @@ to reset your password.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cOC-Ls-PpD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1826" y="-218"/>
+            <point key="canvasLocation" x="2734.7826086956525" y="-218.30357142857142"/>
         </scene>
         <!--ForgotPW Confirm Controller-->
         <scene sceneID="BHG-3d-8T0">
@@ -476,26 +452,11 @@ to reset your password.</string>
                                     <color key="textColor" red="0.41176470590000003" green="0.42745098040000001" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Reset Password" id="bVn-HS-w71">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="z12-YN-Wa1">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="SH5-ym-Lpx">
-                                                <rect key="frame" x="20" y="5" width="45" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="tintColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                            <connections>
-                                                <action selector="xBtnAction:" destination="cUX-rT-GVb" id="PBI-CE-um8"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="Reset Password" id="bVn-HS-w71"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gya-mV-ZXZ">
-                                <rect key="frame" x="114" y="276.5" width="186" height="36"/>
+                                <rect key="frame" x="114" y="291" width="186" height="36"/>
                                 <color key="tintColor" red="0.53725490200000003" green="0.52941176469999995" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Thanks. An email with instructions has been sent.">
@@ -517,11 +478,13 @@ to reset your password.</string>
                             <constraint firstItem="gya-mV-ZXZ" firstAttribute="centerX" secondItem="kMU-XK-nIw" secondAttribute="centerX" id="nnc-L1-PIu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Tkf-CH-ReA"/>
+                    <navigationItem key="navigationItem" id="Tkf-CH-ReA">
+                        <barButtonItem key="backBarButtonItem" title=" " id="rfs-jn-8oY"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Efw-oy-jp8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2499" y="-218"/>
+            <point key="canvasLocation" x="3408.6956521739135" y="-218.30357142857142"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="9jf-vu-Qen">
@@ -532,7 +495,7 @@ to reset your password.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QJq-eO-Y4B" userLabel="Login Info View">
-                                <rect key="frame" x="0.0" y="137" width="414" height="179"/>
+                                <rect key="frame" x="0.0" y="148" width="414" height="179"/>
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="CgW-u3-pLp">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
@@ -621,23 +584,11 @@ to reset your password.</string>
                                     <color key="textColor" red="0.41176470590000003" green="0.42745098040000001" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Sign Up" id="t56-NH-BbA">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="vEL-FG-eKZ">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="PUA-mE-0N1">
-                                                <rect key="frame" x="20" y="5" width="45" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="tintColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="Sign Up" id="t56-NH-BbA"/>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0g1-iR-4l4">
-                                <rect key="frame" x="57" y="745" width="300" height="50"/>
+                                <rect key="frame" x="57" y="782.5" width="300" height="50"/>
                                 <color key="backgroundColor" red="0.68235294120000001" green="0.75294117650000003" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="50s-fw-nHr"/>
@@ -701,7 +652,9 @@ to reset your password.</string>
                             <constraint firstItem="QJq-eO-Y4B" firstAttribute="centerX" secondItem="Awh-DV-QuD" secondAttribute="centerX" id="uxJ-Fl-Q7P"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="WgX-hT-Uhd"/>
+                    <navigationItem key="navigationItem" id="WgX-hT-Uhd">
+                        <barButtonItem key="backBarButtonItem" title=" " id="3PQ-ZV-jZh"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailOL" destination="vet-co-NJx" id="mdy-Z7-R06"/>
                         <outlet property="passwordOL" destination="PTi-Bj-osU" id="VRM-4X-mMa"/>
@@ -710,7 +663,7 @@ to reset your password.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="psu-s6-WHA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="447"/>
+            <point key="canvasLocation" x="1921.7391304347827" y="446.65178571428567"/>
         </scene>
         <!--Profile Sign Up View Controller-->
         <scene sceneID="fku-nn-jFy">
@@ -721,7 +674,7 @@ to reset your password.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pw-1e-ToO" userLabel="Login Info View">
-                                <rect key="frame" x="0.0" y="228" width="414" height="269"/>
+                                <rect key="frame" x="0.0" y="245.5" width="414" height="269"/>
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zrf-xo-NQk">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
@@ -731,18 +684,18 @@ to reset your password.</string>
                                         </constraints>
                                     </progressView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UdR-ds-S2k" userLabel="Profile View">
-                                        <rect key="frame" x="27.5" y="9" width="359" height="67"/>
+                                        <rect key="frame" x="27.5" y="9" width="359" height="67.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJa-C6-dOU">
-                                                <rect key="frame" x="31.5" y="16" width="296" height="35"/>
+                                                <rect key="frame" x="31.5" y="16.5" width="296" height="34.5"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="First Name" minimumFontSize="15" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="cR1-Le-kJI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="170.5" height="35"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="170.5" height="34.5"/>
                                                         <attributedString key="attributedText"/>
                                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="name"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Last Name" minimumFontSize="15" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="BIv-Ti-eDa">
-                                                        <rect key="frame" x="170.5" y="0.0" width="125.5" height="35"/>
+                                                        <rect key="frame" x="170.5" y="0.0" width="125.5" height="34.5"/>
                                                         <attributedString key="attributedText"/>
                                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="family-name"/>
                                                     </textField>
@@ -783,7 +736,7 @@ to reset your password.</string>
                                         </constraints>
                                     </view>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Skv-YX-yeT">
-                                        <rect key="frame" x="0.0" y="174" width="414" height="1"/>
+                                        <rect key="frame" x="0.0" y="174.5" width="414" height="1"/>
                                         <color key="tintColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="O1l-Al-ScV"/>
@@ -852,26 +805,11 @@ to reset your password.</string>
                                     <color key="textColor" red="0.41176470590000003" green="0.42745098040000001" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Create Profile" id="Qjo-mD-2Rr">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="YL2-4g-G3r">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="aou-Io-83N">
-                                                <rect key="frame" x="20" y="5" width="45" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="tintColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                            <connections>
-                                                <action selector="xBtnAction:" destination="PXv-sa-Lgr" id="tUa-Y6-mdg"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="Create Profile" id="Qjo-mD-2Rr"/>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1t-W7-WOP">
-                                <rect key="frame" x="57" y="745" width="300" height="50"/>
+                                <rect key="frame" x="57" y="782.5" width="300" height="50"/>
                                 <color key="backgroundColor" red="0.68235294120000001" green="0.75294117650000003" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="H3i-oh-1xK"/>
@@ -881,7 +819,7 @@ to reset your password.</string>
                                 <buttonConfiguration key="configuration" style="plain" title="CONTINUE"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WEl-o8-NAQ">
-                                <rect key="frame" x="165.5" y="117" width="83" height="83"/>
+                                <rect key="frame" x="165.5" y="125" width="83" height="82.5"/>
                                 <color key="backgroundColor" red="0.93333333333333335" green="0.94117647058823528" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.41176470588235292" green="0.42745098039215684" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <imageReference key="image" image="camera" symbolScale="small"/>
@@ -915,12 +853,29 @@ to reset your password.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Xt-Nz-Dx1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1695.6521739130435" y="446.65178571428567"/>
+            <point key="canvasLocation" x="2605.7971014492755" y="446.65178571428567"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eaq-mS-UkT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qyP-wC-nK9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p4m-Q0-gdl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7M0-Nb-0zw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbO-w9-jK2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
         </scene>
     </scenes>
     <resources>
         <image name="camera" width="170" height="174"/>
-        <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

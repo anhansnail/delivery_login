@@ -53,15 +53,22 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //back button
+        let backImage = UIImage(named: "close")
+        self.navigationController?.navigationBar.backIndicatorImage = backImage
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImage
+        self.navigationController?.navigationBar.tintColor = .init(rgb: 0x555555)
+        self.navigationController?.navigationBar.backItem?.title = " "
         //dismiss keyboard
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
         //setup shadow
-//        self.navigationController? .navigationBar.layer.shadowColor = UIColor.lightGray.cgColor
-//        self.navigationController?.navigationBar.layer.shadowOpacity = 0.8
-//        self.navigationController?.navigationBar.layer.shadowOffset = CGSize(width: 0, height: 2.0)
-//        
-//        self.navigationController?.navigationBar.layer.shadowRadius = 2
+        //        self.navigationController? .navigationBar.layer.shadowColor = UIColor.lightGray.cgColor
+        //        self.navigationController?.navigationBar.layer.shadowOpacity = 0.8
+        //        self.navigationController?.navigationBar.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        //        
+        //        self.navigationController?.navigationBar.layer.shadowRadius = 2
         
         // Do any additional setup after loading the view.
     }
